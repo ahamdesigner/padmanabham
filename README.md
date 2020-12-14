@@ -1,5 +1,5 @@
 # padmanabham
 location
 # Plus code
-XHQ6+39 
+XH639 
 attached potable
