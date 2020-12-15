@@ -1,6 +1,6 @@
 # padmanabham
-location
-# Plus code
-XH639 
-attached potable time capture
+आधार
+# कूटसङ्केत
+६३९ 
+सुवाह्य काल गृह्णाति
 
