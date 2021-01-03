@@ -1,0 +1,31 @@
+readydate = new Date();
+$("body > head").text(readydate.getDay() + "." + readydate.getMonth() + "." +readydate.getFullYear())
+Leap($("ul.calendar").attr('que'))
+Life($("ul.calendar").attr('karma'))
+Paint()
+function Life(input) {
+    var i;
+    for (i = 1; i < input; i++) {
+        let li = document.createElement('li')
+        li.classList.add('day-'+i)
+        li.innerText = i
+        $("ul.calendar").append(li)
+    }
+}
+function Leap(input) {
+    var i;
+    for (i = 0; i < input; i++) {
+        let li = document.createElement('li')
+        li.classList.add('leap-future')
+        li.innerText = "Leap Future"
+        $("ul.calendar").prepend(li)
+    }
+}
+function Paint(date){
+    date = new Date();
+    let cudate = "day-" + date.getDate()
+    $("li."+cudate).css("display", "run-in")
+}
+
+console.info("Loka Samasta Sukhino Bhavanthu")
+console.trace("Sukhino")
