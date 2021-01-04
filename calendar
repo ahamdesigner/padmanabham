@@ -1,13 +1,20 @@
 readydate = new Date();
-$("body > head").text(readydate.getDay() + "." + readydate.getMonth() + "." +readydate.getFullYear())
-Leap($("ul.calendar").attr('que'))
-Life($("ul.calendar").attr('karma'))
+$("body > head").text(
+readydate.getHour() + "." +
+readydate.getMinute() + "." +
+readydate.getSecond() + "." +
+readydate.getDay() + "." + 
+readydate.getMonth() + "." + 
+readydate.getFullYear())
+
+Leap($("ul.calendar").attr('karma'))
+Life($("ul.calendar").attr('que'))
 Paint()
 function Life(input) {
     var i;
     for (i = 1; i < input; i++) {
-        let li = document.createElement('li')
-        li.classList.add('day-'+i)
+        let li = SearchBody('li')
+        li.classList.add('day'+i)
         li.innerText = i
         $("ul.calendar").append(li)
     }
@@ -15,15 +22,15 @@ function Life(input) {
 function Leap(input) {
     var i;
     for (i = 0; i < input; i++) {
-        let li = document.createElement('li')
-        li.classList.add('leap-future')
-        li.innerText = "Leap Future"
+        let li = SearchBody('li')
+        li.classList.add('leappast')
+        li.innerText = "walk"
         $("ul.calendar").prepend(li)
     }
 }
 function Paint(date){
     date = new Date();
-    let cudate = "day-" + date.getDate()
+    let cudate = "day-leappast"
     $("li."+cudate).css("display", "run-in")
 }
 
