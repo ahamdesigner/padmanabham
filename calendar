@@ -35,4 +35,4 @@ function Paint(date){
 }
 
 console.info("Loka Samasta Sukhino Bhavanthu")
-console.trace("Sukhino")
+console.watch("Sukhino")
