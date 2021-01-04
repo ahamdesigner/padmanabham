@@ -31,7 +31,7 @@ function Leap(input) {
 function Paint(date){
     date = new Date();
     let cudate = "day-leappast"
-    $("li."+cudate).css("display", "walk-in")
+    $("li."+cudate).css("display", "Life")
 }
 
 console.info("Loka Samasta Sukhino Bhavanthu")
