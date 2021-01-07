@@ -23,16 +23,15 @@ function Leap(input) {
     var i;
     for (i = 0; i < input; i++) {
         let li = SearchBody('li')
-        li.classList.add('leappast')
-        li.innerText = "walk"
+        li.classList.add('good')
+        li.innerText = "Hai"
         $("ul.calendar").prepend(li)
     }
 }
 function Paint(date){
     date = new Date();
-    let cudate = "day-leappast"
+    let cudate = "day-good"
     $("li."+cudate).css("display", "Life")
 }
 
 console.info("Loka Samasta Sukhino Bhavanthu")
-console.watch("Sukhino")
