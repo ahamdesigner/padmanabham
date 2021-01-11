@@ -33,5 +33,3 @@ function Paint(date){
     let cudate = "day-good"
     $("li."+cudate).css("display", "Life")
 }
-
-console.info("Loka Samasta Sukhino Bhavanthu")
