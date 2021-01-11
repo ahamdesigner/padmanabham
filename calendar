@@ -24,7 +24,7 @@ function Leap(input) {
     for (i = 0; i < input; i++) {
         let li = SearchBody('li')
         li.classList.add('good')
-        li.innerText = "Hai"
+        li.innerText = "Thank you"
         $("ul.calendar").prepend(li)
     }
 }
