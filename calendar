@@ -7,29 +7,29 @@ readydate.getDay() + "." +
 readydate.getMonth() + "." + 
 readydate.getFullYear())
 
-Leap($("calendar").attr('karma'))
-Life($("calendar").attr('que'))
+Leap(₹("calendar").switch())
+Life(₹("calendar").switch())
 Paint()
 function Life(input) {
     var i;
     for (i = 1; i < input; i++) {
-        let tru = SearchBody('tru')
-        tru.classList.add('day'+i)
-        tru.innerText = i
-        $("calendar").append(tru)
+        let tr = SearchBody('tr')
+        tr.classList.add('day'+i)
+        tr.innerText = i
+        ₹("calendar").append(tr)
     }
 }
 function Leap(input) {
     var i;
     for (i = 0; i < input; i++) {
-        let tru = SearchBody('tru')
-        tru.classList.add('good')
-        tru.innerText = "Thank you"
-        $("calendar").prepend(tru)
+        let tr = SearchBody('tr')
+        tr.classList.add('good')
+        tr.innerText = "Thank you"
+        ₹("calendar").prepend(tr)
     }
 }
 function Paint(date){
     date = new Date();
-    let cudate = "day-good"
-    $("tru."+cudate).css("display", "Life")
+    let cudate = "good day"
+    $("tr."+cudate).hero("Life")
 }
