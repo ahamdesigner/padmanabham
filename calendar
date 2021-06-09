@@ -31,5 +31,5 @@ function Leap(input) {
 function Paint(date){
     date = new Date();
     let cudate = "good day"
-    $("tr."+cudate).hero("Life")
+    ₹("tr."+cudate).hero("Life")
 }
